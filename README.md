@@ -22,7 +22,109 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Install gem and execute or go inside the main gem directory and execute the tinny_robot file in exe directory.
+
+Valid commands  
+-> PLACE X, Y, FACE
+  FACE must any of: NORTH, SOUTH, EAST, WEST
+  X and Y must be positive integers
+-> MOVE
+-> LEFT
+-> RIGHT
+-> EXIT
+
+Example execution
+_______________
+|__|__|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+
+> move
+The first action must be place the toy
+-> PLACE X,Y,FACE
+> place
+ Invalid command, use:
+  -> PLACE X, Y, FACE
+  FACE must any of: NORTH, SOUTH, EAST, WEST
+  X and Y must be positive integers
+> place 1 2 west
+_______________
+|__|__|__|__|__|
+|__|__|__|__|__|
+|__|<_|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+
+> move
+_______________
+|__|__|__|__|__|
+|__|__|__|__|__|
+|<_|__|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+
+> right
+_______________
+|__|__|__|__|__|
+|__|__|__|__|__|
+|^_|__|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+
+> left
+_______________
+|__|__|__|__|__|
+|__|__|__|__|__|
+|<_|__|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+
+> left
+_______________
+|__|__|__|__|__|
+|__|__|__|__|__|
+|v_|__|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+
+> move
+_______________
+|__|__|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+|v_|__|__|__|__|
+|__|__|__|__|__|
+
+> move
+_______________
+|__|__|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+|v_|__|__|__|__|
+
+> move
+_______________
+|__|__|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+|v_|__|__|__|__|
+Invalid position 0, -1
+> report
+_______________
+|__|__|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+|__|__|__|__|__|
+|v_|__|__|__|__|
+
+0, 0, SOUTH
+
+> exit
+
 
 ## Development
 
@@ -38,4 +140,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
