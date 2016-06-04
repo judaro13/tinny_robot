@@ -23,11 +23,13 @@ Or install it yourself as:
 ## Usage
 
 Install gem and execute the gem
+
     $ tinny_robot
 
 or go inside the main gem directory and execute the tinny_robot file in exe directory.
-    $ exe/tinny_robot
 
+    $ exe/tinny_robot
+    
 After the execution in console will be display a promp to insert  the following commands:  
 * PLACE X, Y, FACE
 FACE must any of: NORTH, SOUTH, EAST, WEST
