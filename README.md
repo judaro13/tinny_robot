@@ -25,105 +25,28 @@ Or install it yourself as:
 Install gem and execute or go inside the main gem directory and execute the tinny_robot file in exe directory.
 
 Valid commands  
--> PLACE X, Y, FACE
+* PLACE X, Y, FACE
   FACE must any of: NORTH, SOUTH, EAST, WEST
   X and Y must be positive integers
--> MOVE
--> LEFT
--> RIGHT
--> EXIT
+* MOVE
+* LEFT
+* RIGHT
+* EXIT
 
-Example execution
-_______________
-|__|__|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
+Command examples:
+place 1 2 west
+PLACE 1, 2, west 
+move
+MOVE
+left
+LEFT
+right
+RIGHT
+report
+REPORT
+exit
+EXIT
 
-> move
-The first action must be place the toy
--> PLACE X,Y,FACE
-> place
- Invalid command, use:
-  -> PLACE X, Y, FACE
-  FACE must any of: NORTH, SOUTH, EAST, WEST
-  X and Y must be positive integers
-> place 1 2 west
-_______________
-|__|__|__|__|__|
-|__|__|__|__|__|
-|__|<_|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
-
-> move
-_______________
-|__|__|__|__|__|
-|__|__|__|__|__|
-|<_|__|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
-
-> right
-_______________
-|__|__|__|__|__|
-|__|__|__|__|__|
-|^_|__|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
-
-> left
-_______________
-|__|__|__|__|__|
-|__|__|__|__|__|
-|<_|__|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
-
-> left
-_______________
-|__|__|__|__|__|
-|__|__|__|__|__|
-|v_|__|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
-
-> move
-_______________
-|__|__|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
-|v_|__|__|__|__|
-|__|__|__|__|__|
-
-> move
-_______________
-|__|__|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
-|v_|__|__|__|__|
-
-> move
-_______________
-|__|__|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
-|v_|__|__|__|__|
-Invalid position 0, -1
-> report
-_______________
-|__|__|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
-|__|__|__|__|__|
-|v_|__|__|__|__|
-
-0, 0, SOUTH
-
-> exit
 
 
 ## Development
